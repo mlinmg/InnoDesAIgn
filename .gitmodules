@@ -1,0 +1,3 @@
+[submodule "HDNet"]
+	path = HDNet
+	url = https://github.com/chenhaoxing/HDNet

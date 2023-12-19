@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+        .box__dragndrop, .box__uploading, .box__success, .box__error { display: none; }
+        .box.has-advanced-upload { background-color: white; outline: 2px dashed black; outline-offset: -10px; }
+        .box.has-advanced-upload .box__dragndrop { display: inline; }
+        .box.is-dragover { background-color: #e9e9e9; }
+display: none;
+}
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #e0e0e0;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 33%;
+    height: 5px;
+    background-color: #007AFF;
+    transition: width 0.3s ease;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.drag-drop {
+    border: 2px dashed #007AFF;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.text-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.text-inputs input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007AFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #005BB5;
+}
+
+.images-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.loading {
+    text-align: center;
+}
+
+#loadingStatus {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007AFF;
+}
